@@ -50,7 +50,7 @@ namespace MvcMovie.Areas.Identity.Pages.Account
                     ModelState.AddModelError("notFoundEmail", "Không tìm thấy tài khoản nào");
                     ViewData["notFoundEmail"] = "notFound";
                     return Page();
-                    return RedirectToPage("./Register",new { preEmail=Input.Email});
+                    //return RedirectToPage("./Register",new { preEmail=Input.Email});
                 }
 
                 // Phát sinh Token để reset password
